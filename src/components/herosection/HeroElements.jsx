@@ -71,24 +71,23 @@ export const HeroContent = styled.div`
     h1{
         color: #f6c6fb;
         font-size: 3rem;
-        text-align: left;
+        text-align: center;
         text-shadow: 1px 1px 5px black;
+    }
 
-        @media screen and (max-width: 768px){
-            text-align: center;
-        }
+    h2{
+        color: #f6c6fb;
+        font-size: 2.5rem;
+        text-align: center;
+        text-shadow: 1px 1px 5px black;
     }
 
     p{
         color: white;
-        margin-top: 24px;
+        margin: 2rem 0 3rem 0;
         font-size: 2rem;
-        text-align: left;
+        text-align: center;
         text-shadow: 1px 1px 5px black;
-
-        @media screen and (max-width: 768px){
-            text-align: center;
-        }
     }
 `
 

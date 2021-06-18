@@ -16,12 +16,13 @@ export const Button = styled(Link)`
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-    padding: 10px 15px;
+    padding: 8px 15px;
+    min-width: 150px;
     color: #111111;
-    background-color: #f6c6fb;
+    background-color: #f6c6fb98;
     box-shadow: 1px 1px 5px black;
     &:hover{
-    background-color: white;
+    background-color: #f6c6fb;
     transition: 0.6s;
     }
 `;

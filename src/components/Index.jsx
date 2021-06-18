@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import About from './about/About'
 import HeroSection from './herosection/HeroSection'
+import { HomeObjOne, HomeObjThree, HomeObjTwo } from './infoSection/infoData'
+import InfoSection from './infoSection/InfoSection'
 import NavBar from './styled_components/navbar/index'
 import SideBar from './styled_components/sidebar/Index'
 
@@ -17,7 +18,9 @@ const Index = () => {
             <SideBar isOpen={isOpen} toggle={toggle}/>
             <NavBar toggle={toggle}/>
             <HeroSection/>
-            <About/>
+            <InfoSection {...HomeObjOne}/>
+            <InfoSection {...HomeObjTwo}/>
+            <InfoSection {...HomeObjThree}/>
         </>
     )
 }

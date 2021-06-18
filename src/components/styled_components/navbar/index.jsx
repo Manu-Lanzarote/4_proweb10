@@ -12,7 +12,7 @@ const NavBar = ({toggle}) => {
             <Nav>
                 <NavBarContainer>
                     <NavLogo to='/'> 
-                        WEBPRO 10
+                        ProWeb 10
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars/>
@@ -20,7 +20,7 @@ const NavBar = ({toggle}) => {
                     <NavMenu>
                         <NavItem>
                             <NavLinks to='about'>
-                                <span>ABOUT</span>
+                                <span>ABOUT ME</span>
                             </NavLinks>
                         </NavItem>
                         <NavItem>
