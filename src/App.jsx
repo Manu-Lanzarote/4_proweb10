@@ -1,11 +1,15 @@
 import React from "react";
-import Index from "./components/Index";
+import { Switch, Route } from "react-router-dom";
+
+import Home from "./components/pages/Home";
+import SigninPage from "./components/pages/Signin";
 
 function App() {
   return (
-    <>
-      <Index/>
-    </>
+    <Switch>
+      <Route path='/' component={Home} exact />
+      <Route path='/signin' component={SigninPage} />
+    </Switch>
   );
 }
 

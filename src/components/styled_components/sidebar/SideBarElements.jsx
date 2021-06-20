@@ -71,21 +71,18 @@ export const SideBarLink = styled(LinkS)`
 `
 
 export const SideBarRoute = styled(LinkR)`
-    border-radius: 50px;
-    background: #f6c6fb;
-    white-space: nowrap;
-    padding: 16px 64px;
-    color: #010606;
-    font-size: 16px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 400;
     text-decoration: none;
+    transition: 0.3s ease-in-out;
+    color: #f6c6fb;
+    cursor: pointer;
 
     &:hover{
+        color: white;
         transition: 0.3s ease-in-out;
-        background: white;
-        color: #010606;
     }
 `

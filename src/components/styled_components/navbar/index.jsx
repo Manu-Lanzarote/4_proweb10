@@ -1,7 +1,7 @@
 import React from 'react'
 
 //Importación de estilos desde el componenteNavBarElements
-import {Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavBarElements'
+import {Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinksS, NavLinksR} from './NavBarElements'
 
 //Iconos
 import {FaBars} from 'react-icons/fa'
@@ -11,7 +11,7 @@ const NavBar = ({toggle}) => {
         <>
             <Nav>
                 <NavBarContainer>
-                    <NavLogo to='/'> 
+                    <NavLogo to='/'>
                         ProWeb 10
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
@@ -19,24 +19,29 @@ const NavBar = ({toggle}) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='about'>
+                            <NavLinksS to='about'>
                                 <span>ABOUT ME</span>
-                            </NavLinks>
+                            </NavLinksS>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='discover'>
+                            <NavLinksS to='discover'>
                                 <span>DISCOVER</span>
-                            </NavLinks>
+                            </NavLinksS>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='services'>
+                            <NavLinksS to='services'>
                                 <span>SERVICES</span>
-                            </NavLinks>
+                            </NavLinksS>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='contact'>
-                                <span>CONTACT</span>
-                            </NavLinks>
+                            <NavLinksS to='products'>
+                                <span>PRODUCTS</span>
+                            </NavLinksS>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinksR to='/signin'>
+                                <span>SIGN IN</span>
+                            </NavLinksR>
                         </NavItem>
                     </NavMenu>
                 </NavBarContainer>

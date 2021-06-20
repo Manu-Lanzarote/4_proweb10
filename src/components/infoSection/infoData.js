@@ -36,10 +36,10 @@ export const HomeObjTwo = {
 };
 
 export const HomeObjThree = {
-  id: "services",
-  lightBg: false,
-  lightText: true,
-  LightTextDesc: true,
+  id: "products",
+  lightBg: true,
+  lightText: false,
+  LightTextDesc: false,
   topLine: "Tu mejor tarjeta de visita",
   headLine: "Haz de tu web tu mejor tarjeta de visita",
   description:
@@ -48,7 +48,7 @@ export const HomeObjThree = {
   imgStart: false,
   img: require("../../images/web4.svg").default,
   alt: "Description",
-  dark: true,
-  primary: true,
-  darkText: false,
+  dark: false,
+  primary: false,
+  darkText: true,
 };
