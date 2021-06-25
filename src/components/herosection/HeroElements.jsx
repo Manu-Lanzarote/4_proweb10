@@ -64,10 +64,6 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: left;
 
-    @media screen and (max-width: 768px){
-        align-items: center;
-    }
-
     h1{
         color: #f6c6fb;
         font-size: 3rem;
@@ -89,6 +85,21 @@ export const HeroContent = styled.div`
         text-align: center;
         text-shadow: 1px 1px 5px black;
     }
+
+    @media screen and (max-width: 768px){
+        align-items: center;
+        margin-top: 2rem;
+
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
 `
 
 //Los estilos del botón están definidos en el componenteButton.jsx
@@ -96,9 +107,11 @@ export const HeroContent = styled.div`
 export const ArrowRightShort = styled(BsArrowRightShort)`
     margin-left: 10px;
     font-size: 2rem;
+    color: white;
 `
 
 export const ArrowRight = styled(BsArrowRight)`
 margin-left: 10px;
 font-size: 2rem;
+color: white;
 `

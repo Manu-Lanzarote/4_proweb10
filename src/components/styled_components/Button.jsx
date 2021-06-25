@@ -1,5 +1,7 @@
-import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import styled, {css} from 'styled-components'
+
+//importo Link desde react-scroll por que quiero que los botones a otras secciones del home haciendo scroll.
+import { Link } from 'react-scroll'
 
 export const Button = styled(Link)`
     font-size: 1.2rem;
@@ -25,4 +27,8 @@ export const Button = styled(Link)`
     background-color: #f6c6fb;
     transition: 0.6s;
     }
+    //Paso por props el color de texto blanco que quiero, por ejemplo, en el botón del Hero
+    ${props => props.hero && css`
+        color: white;
+    `}
 `;

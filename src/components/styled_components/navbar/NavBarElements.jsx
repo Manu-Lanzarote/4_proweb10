@@ -4,7 +4,8 @@ import { Link as LinkS } from 'react-scroll'
 
 
 export const Nav = styled.nav`
-    background-color: #010606;
+    //Color de la barra de navegación, transparente o negro al hacer scroll
+    background-color: ${({scrollNav}) => (scrollNav ? '#010606' : 'transparent')};
     height: 60px;
     margin-top: -60px;
     display: flex;
@@ -74,7 +75,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-    height: 80px;
+    height: 50px;
     font-size: 1.1rem;
     font-weight: 500;
 `
