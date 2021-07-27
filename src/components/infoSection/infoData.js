@@ -24,10 +24,9 @@ export const HomeObjTwo = {
   lightText: false,
   LightTextDesc: false,
   topLine: "Tu tienda abierta 24 horas",
-  headLine:
-    "Tu web trabaja por tí, las 24 horas del día todos los días del año",
+  headLine: "Nosotros nos encargamos de todo, (si tú quieres)",
   description:
-    "Tu web desarrollada con las mejor tecnología del mercado, Tu web desarrollada con las mejor tecnologías del mercado",
+    "Pon toda tu energía en tu negocio, nosotros nos encargamos de todo lo demás.",
   buttonLabel: "Learn More",
   imgStart: true,
   img: require("../../images/web1.svg").default,
