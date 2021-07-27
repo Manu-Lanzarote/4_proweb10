@@ -1,8 +1,7 @@
-import React from 'react'
-import { Button } from '../styled_components/Button'
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './InfoElements'
+import GlassButtom from '../styled_components/glass_buttom/GlassButtom'
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, ImgWrap, Img } from './InfoElements'
 
-const InfoSection = ({lightBg, id, id2, imgStart, topLine, lightText, headLine, darkText, description,buttonLabel, img, alt, primary, dark, dark2}) => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img, alt}) => {
     return (
         <InfoContainer lightBg={lightBg} id={id}>
             <InfoWrapper>
@@ -12,18 +11,7 @@ const InfoSection = ({lightBg, id, id2, imgStart, topLine, lightText, headLine, 
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headLine}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                                <BtnWrap>
-                                    <Button to={id2}
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact='true'
-                                    offset={-60}
-                                    primary={primary ? 1 : 0}
-                                    dark={dark ? 1 : 0}
-                                    dark2={dark2 ? 1 : 0}
-                                    >{buttonLabel}</Button>
-                                </BtnWrap>
+                                <GlassButtom titulo="Learn More"/>
                             </TextWrapper>
                         </Column1>
                         <Column2>

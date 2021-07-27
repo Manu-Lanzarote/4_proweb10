@@ -78,11 +78,11 @@ const NavBar = ({toggle}) => {
                             </NavLinksS>
                         </NavItem>
                         <NavItem>
-                            <NavLinksR to='/signin'
+                            <NavLinksR to='/contact'
                             // Propiedades react-scroll
                             smooth={true} duration={500} spy={true} exact='true' offset={-60}
                             >
-                                <span>SIGN IN</span>
+                                <span>CONTACT</span>
                             </NavLinksR>
                         </NavItem>
                     </NavMenu>

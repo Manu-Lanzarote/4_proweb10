@@ -167,8 +167,8 @@ main {
 .glass_container .glass_box .glass_content a {
   display: inline-block;
   font-size: 1.1em;
-  color: #010606;
-  background-color: #f6c6fb98;
+  color: white;
+  background-color: #ef4ffe90;
   padding: 10px;
   border-radius: 50px;
   text-decoration: none;
@@ -178,5 +178,6 @@ main {
 
 .glass_container .glass_box .glass_content a:hover {
   background-color: #f6c6fb;
+  color: #ea03ff;
   transition: 1s;
 }

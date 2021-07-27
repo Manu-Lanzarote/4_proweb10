@@ -7,8 +7,6 @@ import FloatActionButton from '../styled_components/fab/FloatActionButton'
 
 import GlassCard from '../styled_components/glassmorphism_cards/GlassCard'
 
-import GlassButtom from '../styled_components/glass_buttom/GlassButtom'
-
 import Footer from '../styled_components/footer/Footer'
 import NavBar from '../styled_components/navbar/index'
 import SideBar from '../styled_components/sidebar/Index'
@@ -32,7 +30,6 @@ const Home = () => {
             <GlassCard/>
             <Services/>
             <InfoSection {...HomeObjThree}/>
-            <GlassButtom titulo='Hola'/>
             <Footer/>
             <FloatActionButton/>
         </>

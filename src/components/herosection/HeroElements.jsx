@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-//Flechas que se encuentran dentro del botón
-import {BsArrowRight} from 'react-icons/bs'
-import {BsArrowRightShort} from 'react-icons/bs'
-
 export const HeroContainer = styled.div`
     background-color: #000000;
     display: flex;
@@ -100,18 +96,4 @@ export const HeroContent = styled.div`
             font-size: 1.5rem;
         }
     }
-`
-
-//Los estilos del botón están definidos en el componenteButton.jsx
-//Aquí le voy a dar estilos al los iconos flechas que he añadido al texto del botón
-export const ArrowRightShort = styled(BsArrowRightShort)`
-    margin-left: 10px;
-    font-size: 2rem;
-    color: white;
-`
-
-export const ArrowRight = styled(BsArrowRight)`
-margin-left: 10px;
-font-size: 2rem;
-color: white;
 `

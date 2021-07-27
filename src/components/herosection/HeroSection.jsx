@@ -1,17 +1,10 @@
-import React, {useState} from 'react'
-import { HeroContainer, HeroBg, VideoBg, HeroContent, ArrowRightShort, ArrowRight } from './HeroElements'
+import { HeroContainer, HeroBg, VideoBg, HeroContent} from './HeroElements'
 import Video from '../../images/Tunnel_hero.mp4'
 
-//Botones
-import { Button } from '../styled_components/Button'
+//Boton
+import GlassButtom from '../styled_components/glass_buttom/GlassButtom'
 
 const HeroSection = () => {
-const [hover, setHover] = useState(false)
-
-const onHover = () => {
-    setHover(!hover)
-}
-
     return (
         <HeroContainer id='home'>
             <HeroBg>
@@ -21,11 +14,7 @@ const onHover = () => {
                 <h1>ProWeb 10</h1>
                 <h2>Desarrollo Web Full Stack a medida</h2>
                 <p>Haz de tu sitio web profesional la mejor herramienta de<br/>promoción y venta<br/><br/><h2>Destaca entre tus competidores</h2></p>
-                <Button to='services' onMouseEnter={onHover} onMouseLeave={onHover} hero
-                // Propiedades react-scroll
-                smooth={true} duration={500} spy={true} exact='true' offset={-60}>
-                    Portfolio {hover ? <ArrowRight/> : <ArrowRightShort/>}
-                </Button >
+                <GlassButtom titulo='Portfolio'/>
             </HeroContent>
         </HeroContainer>
     )
