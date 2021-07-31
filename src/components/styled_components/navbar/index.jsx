@@ -2,7 +2,7 @@
 import React, {useState, useEffect} from 'react'
 
 //Importación de estilos desde el componenteNavBarElements
-import {Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinksS, NavLinksR} from './NavBarElements'
+import {Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinksS} from './NavBarElements'
 
 //Iconos
 import {FaBars} from 'react-icons/fa'
@@ -78,12 +78,12 @@ const NavBar = ({toggle}) => {
                             </NavLinksS>
                         </NavItem>
                         <NavItem>
-                            <NavLinksR to='/contact'
+                            <NavLinksS to='contact'
                             // Propiedades react-scroll
                             smooth={true} duration={500} spy={true} exact='true' offset={-60}
                             >
                                 <span>CONTACT</span>
-                            </NavLinksR>
+                            </NavLinksS>
                         </NavItem>
                     </NavMenu>
                 </NavBarContainer>

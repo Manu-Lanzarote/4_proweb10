@@ -1,0 +1,263 @@
+.c_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px 10px;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #010606;
+}
+
+.c_section::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(#da47e1, #f6c6fb);
+  border-radius: 50%;
+  transform: translate(-420px, -180px);
+}
+
+.c_section::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(#da47e1, #f6c6fb);
+  border-radius: 50%;
+  transform: translate(400px, 180px);
+}
+
+.c_container {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  max-width: 900px;
+  min-width: 900px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(25px);
+}
+
+.c_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  transform: skewX(-30deg);
+}
+
+.c_container h2 {
+  width: 100%;
+  text-align: center;
+  color: #f6c6fb;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.c_container .c_row100 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.c_container .c_row100 .c_col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 20px;
+}
+
+.c_container .c_row100 .c_col .c_inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+.c_container .c_row100 .c_col .c_inputBox input,
+.c_container .c_row100 .c_col .c_inputBox textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #111111;
+}
+
+.c_container .c_row100 .c_col .c_inputBox .c_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.c_container .c_row100 .c_col .c_inputBox input:focus + .c_text,
+.c_container .c_row100 .c_col .c_inputBox input:valid + .c_text,
+.c_container .c_row100 .c_col .c_inputBox textarea:focus + .c_text,
+.c_container .c_row100 .c_col .c_inputBox textarea:valid + .c_text {
+  top: -35px;
+  left: -10px;
+}
+
+.c_container .c_row100 .c_col .c_inputBox .c_line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #f6c6fb;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.c_container .c_row100 .c_col .c_inputBox input:focus ~ .c_line,
+.c_container .c_row100 .c_col .c_inputBox input:valid ~ .c_line {
+  height: 100%;
+}
+
+.c_container .c_row100 .c_col .c_inputBox.c_textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+
+.c_container .c_row100 .c_col .c_inputBox textarea:focus ~ .c_line,
+.c_container .c_row100 .c_col .c_inputBox textarea:valid ~ .c_line {
+  height: 100%;
+}
+
+.c_container .c_row100 .c_col input[type="submit"] {
+  font-size: 1.1em;
+  background-color: #f6c6fb;
+  color: #ea03ff;
+  padding: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 5px;
+  width: 120px;
+  cursor: pointer;
+  border: none;
+}
+
+.c_container .c_row100 .c_col input[type="submit"]:hover {
+  color: white;
+  background-color: #ef4ffe;
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .c_section {
+    padding-top: 90px;
+  }
+  .c_section::before {
+    transform: translate(-200px, -180px);
+  }
+  .c_section::after {
+    display: none;
+  }
+  .c_container {
+    padding: 20px;
+    min-width: auto;
+  }
+  .c_container h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Cuadrados flotantes */
+.f_box {
+  position: relative;
+}
+
+.f_box .f_square {
+  position: absolute;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(143, 60, 60, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+}
+
+.f_box .f_square:nth-child(1) {
+  top: 10px;
+  right: -80px;
+  width: 110px;
+  height: 110px;
+  z-index: 10;
+  animation-delay: -5s;
+}
+.f_box .f_square:nth-child(2) {
+  top: 150px;
+  left: -100px;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+  animation-delay: -1s;
+}
+.f_box .f_square:nth-child(3) {
+  bottom: 50px;
+  right: -60px;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  animation-delay: -1s;
+}
+.f_box .f_square:nth-child(4) {
+  bottom: -80px;
+  right: 100px;
+  width: 70px;
+  height: 70px;
+  animation-delay: -4s;
+}
+.f_box .f_square:nth-child(5) {
+  top: -40px;
+  right: 240px;
+  width: 60px;
+  height: 60px;
+  animation-delay: -2s;
+}
+.f_box .f_square:nth-child(6) {
+  bottom: 80px;
+  left: -65px;
+  width: 80px;
+  height: 80px;
+  animation-delay: -3s;
+  z-index: 10;
+}

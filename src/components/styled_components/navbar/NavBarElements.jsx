@@ -13,7 +13,7 @@ export const Nav = styled.nav`
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 99;
 
 @media screen and (max-width: 960px){
     transition: 0.8s all ease;
@@ -34,7 +34,7 @@ export const NavLogo = styled(LinkR)`
     color: #f6c6fb;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -100,28 +100,3 @@ export const NavLinksS = styled(LinkS)`
         border-bottom: 3px solid #f6c6fb;
     }
 `
-
-//Estilos de los enlaces Route - Los mismos que los scroll, pero es necesario especificar que es una Ruta para que funcione en Index.jsx
-export const NavLinksR = styled(LinkR)`
-    color: #f6c6fb;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
-    cursor: pointer;
-
-    span{
-        &:hover{
-            color: white;
-        }
-    }
-
-    &.active{
-        border-bottom: 3px solid #f6c6fb;
-    }
-`
-
-
-
-

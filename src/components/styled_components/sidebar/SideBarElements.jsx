@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import {FaTimes} from 'react-icons/fa'
 
-import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 
@@ -54,23 +53,6 @@ export const SideBarMenu = styled.ul`
 `
 
 export const SideBarLink = styled(LinkS)`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-    color: #f6c6fb;
-    cursor: pointer;
-
-    &:hover{
-        color: white;
-        transition: 0.3s ease-in-out;
-    }
-`
-
-export const SideBarRoute = styled(LinkR)`
     display: flex;
     align-items: center;
     justify-content: center;

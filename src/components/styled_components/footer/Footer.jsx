@@ -1,15 +1,8 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinksItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink,  } from './FooterElements'
-
-//react-scroll para que al pulsar el logo la web suba al inicio
-import { animateScroll as scroll } from 'react-scroll'
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinksItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialIcons, SocialIconLink,  } from './FooterElements'
 
 const Footer = () => {
-//Función Scroll Logo al inicio/Top /////react-scroll////////
-const toggleHome = () => {
-    scroll.scrollToTop()
-}
     return (
         <FooterContainer>
             <FooterWrap>
@@ -49,8 +42,6 @@ const toggleHome = () => {
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to='/' onClick={toggleHome}>ProWeb 10</SocialLogo>
-                        <WebsiteRights>ProWeb 10 @ {new Date().getFullYear()} all rights reserved.</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href='/' target='_blank' arial-label='Instagram'>
                                 <FaInstagram/>

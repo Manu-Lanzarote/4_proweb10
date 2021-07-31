@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f6c6fb70;
+  background-color: #ea03ff70;
   box-shadow: 0 15px 35px #00000020;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -48,7 +48,7 @@
   width: 50%;
   height: 100%;
   background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
-  transform: skewX(45deg) translateX(0);
+  transform: skewX(-30deg) translateX(0);
   transition: 0.5s;
 }
 

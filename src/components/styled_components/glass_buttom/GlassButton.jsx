@@ -1,6 +1,6 @@
 import './GlassButtonCss.css'
 
-const GlassButtom = (props) => {
+const GlassButton = (props) => {
     return (
                 <div className="gb_container">
                     <div className="gb_btn">
@@ -10,4 +10,4 @@ const GlassButtom = (props) => {
     )
 }
 
-export default GlassButtom;
+export default GlassButton;

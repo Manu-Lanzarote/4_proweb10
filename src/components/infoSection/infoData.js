@@ -36,6 +36,26 @@ export const HomeObjTwo = {
   darkText: true,
 };
 
+export const HomeObjFour = {
+  id: "discover",
+  id2: "home",
+  lightBg: true,
+  lightText: false,
+  LightTextDesc: false,
+  topLine: "Juega en otra Liga. Acude a prefesionales",
+  headLine:
+    "Ólvídate de soluciones 'gratuítas de partida' de invertir horas y horas en estudiar tutoriales y guías para finalemnte obtener resultados no profesionales ",
+  description:
+    "Construimos tu sitio web PERFECTO, Perfecto en diseño, perfecto en seguridad yperfectamente optimizado y preparado para posicionar en buscadores rápidamente. Si quieres obtener resultados profesionales, acude a profesionales.",
+  buttonLabel: "Learn More",
+  imgStart: true,
+  img: require("../../images/web1.svg").default,
+  alt: "Description",
+  dark: false,
+  primary: false,
+  darkText: true,
+};
+
 export const HomeObjThree = {
   id: "products",
   id2: "services",

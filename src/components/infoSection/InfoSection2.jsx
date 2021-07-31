@@ -1,7 +1,7 @@
 import GlassButton from '../styled_components/glass_buttom/GlassButton'
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, ImgWrap, Img } from './InfoElements'
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img, alt}) => {
+const InfoSection2 = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img, alt}) => {
     return (
         <InfoContainer lightBg={lightBg} id={id}>
             <InfoWrapper>
@@ -11,7 +11,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headLine}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                                <GlassButton titulo="Learn"/>
+                                <GlassButton titulo="More"/>
                             </TextWrapper>
                         </Column1>
                         <Column2>
@@ -25,4 +25,4 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
     )
 }
 
-export default InfoSection
+export default InfoSection2

@@ -7,7 +7,7 @@ import Card3 from './Card3'
 
 const GlassCard = () => {
     return (
-        <main>
+        <main className='card_main' id='services'>
             <div className='glass_container'>
                 <Card1 />
                 <Card2 />
